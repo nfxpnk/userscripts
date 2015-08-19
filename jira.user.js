@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Copy JIRA issue title with issue key
-// @namespace   nfxpnk
-// @include     https://tools.adidas-group.com/jiraold/browse/*
+// @namespace   https://tools.adidas-group.com/jira/browse
+// @include     https://tools.adidas-group.com/jira/browse/*
 // @version     1
 // @grant       none
 // ==/UserScript==
@@ -11,12 +11,12 @@ var nfxpnk = {
 		return document.getElementById(elementId);
 	},
 
-	appendInput: function(parentElement, value, style=false) {
+	appendInput: function(parentElement, value, style) {
 		var input = document.createElement('input');
 		input.type = 'text';
 		input.value = value;
-		if(style !== false) {
-			input.style = style;
+		if(typeof(style) != 'undefined') {
+			input.style.width = '80%';
 		}
 		input.onclick = function() {
 			input.select();
@@ -30,7 +30,7 @@ var nfxpnk = {
 		var fullText = issueKey.textContent + ': ' + text.textContent;
 
 		this.appendInput(issueKey, issueKey.textContent);
-		this.appendInput(text, fullText, 'width: 80%;');
+		this.appendInput(text, fullText, true);
 	}
 };
 

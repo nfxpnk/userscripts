@@ -1,6 +1,6 @@
 // ==UserScript==
 // @name        Insert commit table into JIRA comment
-// @namespace   nfxpnk
+// @namespace   https://tools.adidas-group.com/
 // @include     https://tools.adidas-group.com/jira/browse/*
 // @version     1
 // @grant       none
