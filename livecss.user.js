@@ -78,9 +78,16 @@ var nfxpnk = {
 
 		for (var x = 0; x < links.length; ++x) {
 			if(links[x].type != 'text/css') continue;
-			if(nfxpnk.isFileToUpdate(links[x].href) && !nfxpnk.onPause) {
 
-				fileNameId = nfxpnk.getCssFileFromHref(links[x].href);
+			if(links[x].getAttribute('data') === null) {
+				links[x].setAttribute('data', links[x].href);
+			}
+
+			href = links[x].getAttribute('data');
+
+			if(nfxpnk.isFileToUpdate(href) && !nfxpnk.onPause) {
+
+				fileNameId = nfxpnk.getCssFileFromHref(href);
 
 				if(nfxpnk.ge(fileNameId) === null) {
 					style = document.createElement('style');
@@ -88,9 +95,9 @@ var nfxpnk = {
 					style.setAttribute('id', fileNameId);
 					links[x].parentNode.insertBefore(style, links[x].nextSibling);
 				}
-				//links[x].href = nfxpnk.getUrlFromHref(links[x].href) + nfxpnk.param +'=' + new Date().getMilliseconds();
-				nfxpnk.updateStyles(fileNameId, links[x].href);
 
+				nfxpnk.updateStyles(fileNameId, href);
+				links[x].removeAttribute('href');
 			}
 		}
 		setTimeout(nfxpnk.main, nfxpnk.updateTime);
