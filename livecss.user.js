@@ -2,7 +2,8 @@
 // @name        Live CSS
 // @namespace   nfxpnk
 // @include     http://dev30.store.adidasgroup.demandware.net/s/adidas-GB/*
-// @version     1
+// @version     1.1
+// @updateURL   https://github.com/nfxpnk/gm_scripts/raw/master/livecss.user.js
 // @grant       none
 // ==/UserScript==
 
@@ -67,7 +68,7 @@ var nfxpnk = {
 		var req = new XMLHttpRequest();
 		req.onreadystatechange=function() {
 			if (req.readyState == 4 && req.status == 200) {
-				document.getElementById(id).innerHTML = req.responseText;
+				nfxpnk.ge(id).innerHTML = req.responseText;
 			}
 		}
 		req.open('GET', href + nfxpnk.param +'=' + new Date().getMilliseconds(), true);
