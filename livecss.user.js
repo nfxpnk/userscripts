@@ -2,7 +2,7 @@
 // @name        Live CSS
 // @namespace   nfxpnk
 // @include     http://dev30.store.adidasgroup.demandware.net/s/adidas-GB/*
-// @version     2
+// @version     3
 // @downloadURL https://raw.githubusercontent.com/nfxpnk/gm_scripts/master/livecss.user.js
 // @updateURL   https://raw.githubusercontent.com/nfxpnk/gm_scripts/master/livecss.user.js
 // @grant       none
@@ -37,7 +37,7 @@ var nfxpnk = {
 	},
 	addPlayPauseButton: function() {
 
-		css = '.nfxpnkPause {width:24px; height:24px; box-sizing:content-box; background-color:#fff; display:block; position:fixed; right:10px; top:10px; font-size:0; z-index:9999; border:4px solid #fff;}';
+		css = '.nfxpnkPause {width:24px; height:24px; box-sizing:content-box; background-color:#fff; display:block; position:fixed; right:10px; top:10px; font-size:0; z-index:9999; border:4px solid red;}';
 		css += '.nfxpnkPauseOn {background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAB2klEQVRIS7WW/TEEQRDF30VACC4CRIAIEAEi4CJABIgAESACLgJEgAzuIqB+Vd1bbXd6duqUrro/bj7e6379MTtR3TYk7Us6kLQlad2OLyS9SXqU9CTpM4OZJBsAn0s6HnHAt+8kXZaISgSAXgVvAXmX9CIJzzEi2ZW0GRxgbyYJss76BIDfhv0bSdcVCYj0TNJpuHMSSSJBBF+a7njdYkRDPtbscEfiBHjyaqEDzn+Xo4XAZSPZkHB3m8idAN2ODGnP9G4FjueI5NkW7ikSCPD2wxbRHE37RolSli1GzjwnUwgApGqwaZLQb1tH27G8RIdnEHBhx0oRT0sGgRvnIUqby6KlhOcQkBASk8kDcCRwogu7UyoGl2kBgV+mE7k0FkHcB5xoKNFo4DAJ9FcCMEqO/SJYVaK5FUipulyiZUwyB2mOMYm+DLgvS7wHVpfk1jKlw/GMX63LB2Xa0mi8B3hVK02PYNBobPzrqICAKPDQBxUdvcqwY+TwViAnTdsNO0jiuAb8sGEsuCwMuYfwSA3GtR/sPzjoSYdn2hM5gy0OyPTBiSQA++PBOvKVnsw4u5AFouqT6SR4Rjf6G5G0R7fM7Of8INLsqyISUaL+2eJR4a1/ttBwafn+AIVsgZYS/Fn2AAAAAElFTkSuQmCC);}';
 		css += '.nfxpnkPauseOff {background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAABwUlEQVRIS72WjTEDYRCGn1SADqgAFaACVIAOpAJUQAeogFQQKpBUgA6iAuYxuzdfkrvLTUJ25ibJd/vtuz/v7qZHu2wDx8Ah4Pe9UB8BH8ALMIjvtZZ6DfY1dgWcL3AgXz8AN3VAdQAnwD2wGbe/gGdAr30UI/FRdyPOJsBF6FZ+zQLoscaVT+Aa0Ls28c5dASRIdacE0JunsDSOvOtVFzFa67EbyqcZSQKY87dIi8azmF2MlzqmUBAd27cmCWBIZ5EWjXf1fNYBI5Fd1uVRkgig9++hOZW/SNNBvHuNNPhT2tad+66s444Al8AtIFuSOemZRZauijT0t9J0nvfMgFH0BZCCNtNvSDMxLwuQKR8IkIXpB91KjGUBMisjAb7D4lGR41VTZI2GGlkLwH+maLyWImdBpNbWH7FoiqaLGs2CKc4an2y0uvPaRvMweWubO0NWGRVOBRu2GhUCGIXFtvv8FGQZScI4FbQ5aRrXKtoXXSPRY3mfU3huXKe35aDSuAQw1DbxjrMs51jjwkkjLh5rUq7CtpVZrlbB1K2kbek7h9wRXcQo1ZckU9IEkEoWyojyb0uuRLde/m3R4znDaeAHwTOQNuKQfvoAAAAASUVORK5CYII=);}';
 
