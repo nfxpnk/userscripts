@@ -2,9 +2,9 @@
 // @name        Live CSS
 // @namespace   nfxpnk
 // @include     http://dev30.store.adidasgroup.demandware.net/s/adidas-GB/*
-// @version     1.2
-// @downloadURL https://github.com/nfxpnk/gm_scripts/raw/master/livecss.user.js
-// @updateURL   https://github.com/nfxpnk/gm_scripts/raw/master/livecss.user.js
+// @version     2
+// @downloadURL https://raw.githubusercontent.com/nfxpnk/gm_scripts/master/livecss.user.js
+// @updateURL   https://raw.githubusercontent.com/nfxpnk/gm_scripts/master/livecss.user.js
 // @grant       none
 // ==/UserScript==
 
