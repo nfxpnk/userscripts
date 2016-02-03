@@ -2,7 +2,9 @@
 // @name        Insert commit table into JIRA comment
 // @namespace   https://tools.adidas-group.com/
 // @include     https://tools.adidas-group.com/jira/browse/*
-// @version     1
+// @version     3
+// @downloadURL https://raw.githubusercontent.com/nfxpnk/gm_scripts/master/jira_comment.user.js
+// @updateURL   https://raw.githubusercontent.com/nfxpnk/gm_scripts/master/jira_comment.user.js
 // @grant       none
 // ==/UserScript==
 
