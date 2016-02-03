@@ -13,15 +13,9 @@ var nfxpnk = {
   
   addTable: function() {
     var commentTextArea = this.ge('comment');
-    //commentTextArea.value += '||SVN revisions||Code review||Impacted areas||' + "\n";
-    //commentTextArea.value += '|77777|FISHEYE|Home|';
-    
-    //commentTextArea.value += "\n\n\n";
     
     commentTextArea.value += '|*Description*|Changes|' + "\n";
-    commentTextArea.value += '|*SVN revision*|77777|' + "\n";
-    commentTextArea.value += '|*Branch*|https://svn.adidas-group.com/project/adidas-ecom-ru/branches/dev|' + "\n";
-    commentTextArea.value += '|*Code review*|[http://fisheye.ontrq.com:8060/cru/]|' + "\n";
+    commentTextArea.value += '|*Code review*|[]|' + "\n";
     commentTextArea.value += '|*Impacted areas*|Adidas|' + "\n";
     
     return false;
