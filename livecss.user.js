@@ -2,7 +2,7 @@
 // @name        Live CSS
 // @namespace   nfxpnk
 // @include     http://dev30.store.adidasgroup.demandware.net/s/adidas-GB/*
-// @version     3
+// @version     4
 // @downloadURL https://raw.githubusercontent.com/nfxpnk/gm_scripts/master/livecss.user.js
 // @updateURL   https://raw.githubusercontent.com/nfxpnk/gm_scripts/master/livecss.user.js
 // @grant       none
@@ -11,7 +11,7 @@
 var nfxpnk = {
 	onPause: true,
 	updateTime: 3000,
-	filesToUpdate: ['style.css', 'mobile_global.css', 'foundations_mobile.css', 'globalcomponents.css', 'foundations.css'],
+	filesToUpdate: ['style.css', 'mobile_global.css', 'foundations_mobile.css', 'globalcomponents.css', 'foundations.css', 'default-global.css'],
 	param: '?nfxpnk',
 
 	ge: function(elementId) {
