@@ -11,7 +11,7 @@
 var nfxpnk = {
 	onPause: true,
 	updateTime: 3000,
-	filesToUpdate: ['style1.css', 'style2.css'],
+	filesToUpdate: ['style.css', 'mobile_global.css', 'foundations_mobile.css', 'globalcomponents.css', 'foundations.css'],
 	param: '?nfxpnk',
 
 	ge: function(elementId) {
