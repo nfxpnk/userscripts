@@ -81,9 +81,8 @@ var nfxpnk = {
 
 		for (var x = 0; x < links.length; ++x) {
 			//if(links[x].type != 'text/css') continue;
-            //console.log(links[x].rel);
-            if(links[x].rel != 'stylesheet') continue;
-            //console.log(links[x]);
+			if(links[x].rel != 'stylesheet') continue;
+
 			if(links[x].getAttribute('data') === null) {
 				links[x].setAttribute('data', links[x].href);
 			}
