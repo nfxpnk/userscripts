@@ -1,0 +1,100 @@
+.nfxpnk-button {
+  position: fixed;
+  z-index: 99999;
+  right: 40px;
+  top: 40px;
+  width: 40px;
+  height: 40px;
+}
+
+.nfxpnk-btn {
+  border: 2px solid transparent;
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  background: #ccc;
+  cursor: pointer;
+  text-align: center;
+  color: #000;
+  border-color: #000;
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  transition: -webkit-transform .1s;
+  transition: transform .1s;
+  transition: transform .1s, -webkit-transform .1s;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+.nfxpnk-btn:hover {
+  -webkit-transform: scale(1.08);
+  transform: scale(1.08);
+}
+.nfxpnk-btn:active {
+  -webkit-transform: scale(0.98);
+  transform: scale(0.98);
+  background: #000;
+  color: #fff;
+}
+
+.nfxpnk-icon {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  color: inherit;
+  fill: currentColor;
+  transition: color .2s, fill .2s, background .2s, box-shadow .2s, opacity .2s;
+}
+.nfxpnk-icon .nfxpnk-icon-svg {
+  box-sizing: border-box;
+  width: inherit;
+  max-width: inherit;
+  height: inherit;
+  max-height: inherit;
+  fill: inherit;
+  background: inherit;
+  -moz-transform: translateX(0);
+  -ms-transform: translate(0.5px, -0.3px);
+  pointer-events: none;
+}
+.nfxpnk-icon .nfxpnk-icon-svg > use {
+  transition: opacity .2s;
+}
+
+.nfxpnk-button-off .nfxpnk-btn {
+  background: #fff;
+  color: #fd5151;
+  border-color: #fd5151;
+}
+.nfxpnk-button-off .nfxpnk-btn:active {
+  background: #fd5151;
+  color: #fff;
+}
+.nfxpnk-button-off .nfxpnk-icon-play {
+  display: block;
+}
+.nfxpnk-button-off .nfxpnk-icon-pause {
+  display: none;
+}
+
+.nfxpnk-button-on .nfxpnk-btn {
+  background: #fff;
+  color: #51aefd;
+  border-color: #51aefd;
+}
+.nfxpnk-button-on .nfxpnk-btn:active {
+  background: #51aefd;
+  color: #fff;
+}
+.nfxpnk-button-on .nfxpnk-icon-play {
+  display: none;
+}
+.nfxpnk-button-on .nfxpnk-icon-pause {
+  display: block;
+}

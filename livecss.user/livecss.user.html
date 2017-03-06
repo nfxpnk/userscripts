@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Button</title>
+		<link href="styles.css"rel="stylesheet">
+		<style>
+			.nfxpnk-button {
+				position: relative !important;
+				right: auto !important;
+				top: auto !important;
+			}
+		</style>
+		<script>
+		document.addEventListener('DOMContentLoaded', function(event) { 
+			var btn = document.getElementById('nfxpnk-button');
+			btn.onclick = function(){
+				this.className = this.className == 'nfxpnk-button nfxpnk-button-off' ? 'nfxpnk-button nfxpnk-button-on' : 'nfxpnk-button nfxpnk-button-off';
+			}
+		});
+		</script>
+	</head>
+	<body>
+		<div class="nfxpnk-button nfxpnk-button-off" id="nfxpnk-button">
+			<div style="position: absolute; clip: rect(0, 0, 0, 0);">
+				<svg xmlns="http://www.w3.org/2000/svg">
+					<symbol id="nfxpnk-icon-play" viewBox="0 0 32 32"><path d="M 28.702988,15.421428 8.3284652,1.370034 C 8.1127763,1.2217918 7.8331536,1.2063352 7.6027107,1.3264747 7.3715653,1.4480192 7.2268359,1.6868929 7.2268359,1.9482489 V 30.051038 c 0,0.261356 0.1447294,0.500932 0.3758748,0.622476 0.1025752,0.0534 0.2149863,0.08009 0.3266949,0.08009 0.1398114,0 0.2789202,-0.04215 0.3990596,-0.124354 L 28.702988,16.577858 c 0.190397,-0.13138 0.30351,-0.347069 0.30351,-0.578215 0,-0.231145 -0.113816,-0.446834 -0.30351,-0.578215 z"></path></symbol>
+					<symbol id="nfxpnk-icon-pause" viewBox="0 0 32 32"><path d="M 11.844623,2.4949252 H 6.6503616 c -1.1474852,0 -2.0776609,0.9302916 -2.0776609,2.0776591 V 27.427416 c 0,1.147483 0.9301757,2.077659 2.0776609,2.077659 h 5.1942614 c 1.147486,0 2.077661,-0.930176 2.077661,-2.077659 V 4.5725843 C 13.922166,3.4252168 12.991991,2.4949252 11.844623,2.4949252 Z m 13.505015,0 h -5.194262 c -1.147602,0 -2.077778,0.9302916 -2.077778,2.0776591 V 27.427416 c 0,1.147483 0.930176,2.077659 2.077778,2.077659 h 5.194262 c 1.147486,0 2.077661,-0.930176 2.077661,-2.077659 V 4.5725843 C 27.427417,3.4252168 26.497124,2.4949252 25.349638,2.4949252 Z"></path></symbol>
+				</svg>
+			</div>
+			<div class="nfxpnk-btn">
+				<i class="nfxpnk-icon">
+					<svg class="nfxpnk-icon-svg nfxpnk-icon-play">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#nfxpnk-icon-play"></use>
+					</svg>
+					<svg class="nfxpnk-icon-svg nfxpnk-icon-pause">
+						<use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#nfxpnk-icon-pause"></use>
+					</svg>
+				</i>
+			</div>
+		</div>
+	</body>
+</html>

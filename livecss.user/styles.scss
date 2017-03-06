@@ -1,0 +1,109 @@
+$button-size: 40px;
+$play-color: #fd5151;
+$pause-color: #51aefd;
+$icon-color: #fff;
+
+.nfxpnk-button {
+    position: fixed;
+    z-index: 99999;
+    right: 40px;
+    top: 40px;
+    width: $button-size;
+    height: $button-size;
+}
+
+.nfxpnk-btn {
+    border: 2px solid transparent;
+    border-radius: 100%;
+    width: $button-size;
+    height: $button-size;
+    background: #ccc;
+    cursor: pointer;
+    text-align: center;
+    color: #000;
+    border-color: #000;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    transition: -webkit-transform .1s;
+    transition: transform .1s;
+    transition: transform .1s, -webkit-transform .1s;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    &:hover {
+        -webkit-transform: scale(1.08);
+        transform: scale(1.08);
+    }
+    &:active {
+        -webkit-transform: scale(.98);
+        transform: scale(.98);
+        background: #000;
+        color: #fff;
+    }
+}
+
+.nfxpnk-icon {
+    width: $button-size - 20px;
+    height: $button-size - 20px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: auto;
+    color: inherit;
+    fill: currentColor;
+    transition: color .2s, fill .2s, background .2s, box-shadow .2s, opacity .2s;
+    .nfxpnk-icon-svg {
+        box-sizing: border-box;
+        width: inherit;
+        max-width: inherit;
+        height: inherit;
+        max-height: inherit;
+        fill: inherit;
+        background: inherit;
+        -moz-transform: translateX(0);
+        -ms-transform: translate(.5px, -.3px);
+        pointer-events: none;
+        > use {
+            transition: opacity .2s;
+        }
+    }
+}
+
+.nfxpnk-button-off {
+    .nfxpnk-btn {
+        background: $icon-color;
+        color: $play-color;
+        border-color: $play-color;
+        &:active {
+            background: $play-color;
+            color: $icon-color;
+        }
+    }
+    .nfxpnk-icon-play {
+        display: block;
+    }
+    .nfxpnk-icon-pause {
+        display: none;
+    }
+}
+
+.nfxpnk-button-on {
+    .nfxpnk-btn {
+        background: $icon-color;
+        color: $pause-color;
+        border-color: $pause-color;
+        &:active {
+            background: $pause-color;
+            color: $icon-color;
+        }
+    }
+    .nfxpnk-icon-play {
+        display: none;
+    }
+    .nfxpnk-icon-pause {
+        display: block;
+    }
+}
