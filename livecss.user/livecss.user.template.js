@@ -3,8 +3,8 @@
 // @namespace   nfxpnk
 // @include     *
 // @version     5
-// @downloadURL https://raw.githubusercontent.com/nfxpnk/userscripts/master/livecss.user.js
-// @updateURL   https://raw.githubusercontent.com/nfxpnk/userscripts/master/livecss.user.js
+// @downloadURL https://raw.githubusercontent.com/nfxpnk/userscripts/master/livecss.user/livecss.user.js
+// @updateURL   https://raw.githubusercontent.com/nfxpnk/userscripts/master/livecss.user/livecss.user.js
 // @grant       none
 // ==/UserScript==
 
@@ -66,10 +66,11 @@ var nfxpnk = {
 		var req = new XMLHttpRequest();
 		req.onreadystatechange=function() {
 			if (req.readyState == 4 && req.status == 200) {
-				//nfxpnk.ge(id).innerHTML = req.responseText;
-                
-                newCss = req.responseText.replace(/\.\.\//g, "https://dev07-eu-nyr.demandware.net/on/demandware.static/Sites-nyr-Site/-/default/v1484041980136/");
-                nfxpnk.ge(id).innerHTML = newCss;
+				nfxpnk.ge(id).innerHTML = req.responseText;
+				
+				// Urls for images, fonts, etc
+				//newCss = req.responseText.replace(/\.\.\//g, "https://dev07-eu-nyr.demandware.net/on/demandware.static/Sites-nyr-Site/-/default/v1484041980136/");
+				//nfxpnk.ge(id).innerHTML = newCss;
 			}
 		}
 		req.open('GET', href + nfxpnk.param +'=' + new Date().getMilliseconds(), true);
