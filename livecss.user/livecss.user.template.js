@@ -69,7 +69,7 @@ var nfxpnk = {
 				nfxpnk.ge(id).innerHTML = req.responseText;
 				
 				// Urls for images, fonts, etc
-				//newCss = req.responseText.replace(/\.\.\//g, "https://dev07-eu-nyr.demandware.net/on/demandware.static/Sites-nyr-Site/-/default/v1484041980136/");
+				//newCss = req.responseText.replace(/\.\.\//g, "http://localhost/");
 				//nfxpnk.ge(id).innerHTML = newCss;
 			}
 		}
