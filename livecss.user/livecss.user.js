@@ -1,7 +1,7 @@
 // ==UserScript==
 // @name        Live CSS
 // @namespace   nfxpnk
-// @include     *
+// @include     https://raw.githubusercontent.com/nfxpnk/userscripts/master/livecss.user/livecss.user.js
 // @version     5
 // @downloadURL https://raw.githubusercontent.com/nfxpnk/userscripts/master/livecss.user/livecss.user.js
 // @updateURL   https://raw.githubusercontent.com/nfxpnk/userscripts/master/livecss.user/livecss.user.js
