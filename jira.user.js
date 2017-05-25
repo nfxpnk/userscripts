@@ -1,8 +1,8 @@
 // ==UserScript==
 // @name        Copy JIRA issue title with issue key
-// @namespace   https://tools.adidas-group.com/jira/browse
-// @include     https://tools.adidas-group.com/jira/browse/*
-// @version     1
+// @namespace   https://jira.ontrq.com/browse/
+// @include     https://jira.ontrq.com/browse/*
+// @version     2
 // @grant       none
 // ==/UserScript==
 
@@ -27,7 +27,7 @@ var nfxpnk = {
 	main: function() {
 		var issueKey = this.ge('key-val');
 		var text = this.ge('summary-val');
-		var fullText = issueKey.textContent + ': ' + text.textContent;
+		var fullText = 'Feature: ' + issueKey.textContent + ' - ' + text.textContent;
 
 		this.appendInput(issueKey, issueKey.textContent);
 		this.appendInput(text, fullText, true);
