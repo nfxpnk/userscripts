@@ -2,7 +2,7 @@
 // @name        Copy JIRA issue title with issue key
 // @namespace   https://jira.ontrq.com/browse/
 // @include     https://jira.ontrq.com/browse/*
-// @version     2
+// @version     3
 // @grant       none
 // ==/UserScript==
 
@@ -27,7 +27,11 @@ var nfxpnk = {
 	main: function() {
 		var issueKey = this.ge('key-val');
 		var text = this.ge('summary-val');
-		var fullText = 'Feature: ' + issueKey.textContent + ' - ' + text.textContent;
+		var issueType = this.ge('type-val').innerText;
+
+		var messageType = issueType.match(/Bug/) ? 'Fix' : 'Feature';
+
+		var fullText = messageType + ': ' + issueKey.textContent + ' - ' + text.textContent;
 
 		this.appendInput(issueKey, issueKey.textContent);
 		this.appendInput(text, fullText, true);
