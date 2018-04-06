@@ -35,6 +35,13 @@ var nfxpnk = {
 
 		this.appendInput(issueKey, issueKey.textContent);
 		this.appendInput(text, fullText, true);
+
+		var summary = text.textContent.toLowerCase().replace(/[^ \w]+/g, '');
+		summary = summary.replace(/ +/g, '-');
+		//summary = summary.substring(0, 40);
+
+		var branchName = messageType.toLowerCase() + '/' + issueKey.textContent + '-' + summary;
+		this.appendInput(text, branchName, true);
 	}
 };
 
