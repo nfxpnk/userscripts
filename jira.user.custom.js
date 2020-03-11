@@ -34,8 +34,10 @@ var nfxpnk = {
         var messageTypeBranch = issueType.match(/Bug/) ? 'bugfix' : 'feature';
 
         var fullText = issueKey.textContent + ':' + messageType + ': ' + text.textContent;
+        var fullTextCommit = 'git ci -m"' + issueKey.textContent + ':' + messageType + ': ' + text.textContent.replace(/"/g, '\\"') + '"';
 
         this.appendInput(issueKey, issueKey.textContent);
+        this.appendInput(text, fullTextCommit, true);
         this.appendInput(text, fullText, true);
 
         var summary = text.textContent.toLowerCase().replace(/[^ \w]+/g, '');
