@@ -44,8 +44,10 @@ var nfxpnk = {
 
         var branchName = messageTypeBranch.toLowerCase() + '/' + issueKey.textContent + '-' + summary;
         var gitCheckout = 'git checkout -b ' + messageTypeBranch.toLowerCase() + '/' + issueKey.textContent + '-fe';
+        var gitCreate = 'create ' + messageTypeBranch.toLowerCase() + '/' + issueKey.textContent + '-fe';
         this.appendInput(text, branchName, true);
         this.appendInput(text, gitCheckout, true);
+        this.appendInput(text, gitCreate, true);
     }
 };
 
