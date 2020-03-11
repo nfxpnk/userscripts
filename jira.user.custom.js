@@ -1,9 +1,9 @@
 // ==UserScript==
-// @name		Copy JIRA issue title with issue key
+// @name        Copy JIRA issue title with issue key
 // @namespace   https://jira.ontrq.com/browse/
-// @include	 https://jira.ontrq.com/browse/*
-// @version	 4
-// @grant	   none
+// @include     https://jira.ontrq.com/browse/*
+// @version     4
+// @grant       none
 // ==/UserScript==
 
 var nfxpnk = {
