@@ -5,13 +5,9 @@
 // @grant       none
 // ==/UserScript==
 
-
-//, 'styles.css', 'checkout.css'
 var nfxpnk = {
-    onPause: true,
-    updateTime: 3000,
     filesToUpdate: ['allinone.css', 'checkout.css', 'style.css', 'print.css'],
-    param: '?nfxpnk',
+    param: '?',
 
     ge: function(elementId) {
         return document.getElementById(elementId);
@@ -56,7 +52,7 @@ var nfxpnk = {
 
         var head = document.getElementsByTagName('head')[0];
         var newElement = document.createElement('script');
-        newElement.setAttribute('src', 'https://127.0.0.1:9000/livereload.js?snipver=1');
+        newElement.setAttribute('src', 'https://127.0.0.1:35729/livereload.js?snipver=1');
         head.appendChild(newElement);
     }
 }
